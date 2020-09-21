@@ -27,5 +27,5 @@ this.setState( st => {
   upvote = { ()=> this.handleVotes(j.id, 1) }
   downvote = { () => this.handleVotes(j.id,-1) } />
  )
- 
  ```
+- to set local storage use `window.localStorage.setItem(key, value)`
