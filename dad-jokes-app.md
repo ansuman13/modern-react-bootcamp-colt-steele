@@ -2,13 +2,14 @@
 ## Conceptual things during coding
 
 ### upvoting and downvoting jokes
-- `this.setState()` takes function as well as object 
+- `this.setState()` ~takes function~ takes function that return object also.
 ```js
 this.setState( st => {
 {jokesArray: st.jokesArray.map( (j) => j.id===id ? {...j, votes:j.votes += delta}: j )}
 })
 
 ```
+- second argument to `this.setState()` is a arrow function that runs after the state is set.  
 
 - how to pass function with args from JokesList(parent) to Joke(child) component
  
